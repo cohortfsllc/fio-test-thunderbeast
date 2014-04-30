@@ -1,0 +1,6 @@
+for X in *.fio
+do
+	echo == $X ==
+	/usr/bin/time fio $X > $X.out
+	rm -f /root/fio-data/*
+done

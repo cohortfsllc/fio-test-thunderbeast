@@ -1,0 +1,12 @@
+[randWrites-64k]
+ioengine=libaio
+iodepth=16
+rw=randwrite
+bs=64k
+direct=1
+numjobs=1
+size=128m
+directory=/root/fio-data
+runtime=10s
+time_based
+exec_prerun=echo 3 > /proc/sys/vm/drop_caches
