@@ -1,5 +1,7 @@
 [randread-4k]
-ioengine=libaio
+ioengine=./libfio_ceph_filestore.so
+objectstore=memstore
+filestore_debug=0
 iodepth=16
 rw=randread
 bs=4k

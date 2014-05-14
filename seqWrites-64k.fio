@@ -1,5 +1,7 @@
 [seqWrites-64k]
-ioengine=libaio
+ioengine=./libfio_ceph_filestore.so
+objectstore=memstore
+filestore_debug=1
 iodepth=2
 rw=write
 bs=64k

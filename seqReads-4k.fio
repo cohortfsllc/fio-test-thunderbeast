@@ -1,5 +1,7 @@
 [seqReads-4k]
-ioengine=libaio
+ioengine=./libfio_ceph_filestore.so
+objectstore=memstore
+filestore_debug=0
 iodepth=2
 rw=read
 bs=4k
