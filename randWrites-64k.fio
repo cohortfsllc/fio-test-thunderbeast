@@ -11,4 +11,4 @@ size=128m
 directory=/root/fio-data
 runtime=10s
 time_based
-exec_prerun=echo 3 > /proc/sys/vm/drop_caches
+invalidate=0
